@@ -174,10 +174,12 @@ body {
 }
 
 .login-form-in{
-
+    flex-direction: column;
+    flex : 1;
     color : gray;
     background-color: white;
 }
+
 
 .caseLogin{
     border : black solid 1px;
