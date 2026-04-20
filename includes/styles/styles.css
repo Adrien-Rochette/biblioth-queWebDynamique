@@ -185,3 +185,23 @@ body {
     border : black solid 1px;
     padding: 10px;
 }
+
+.user-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-card {
+    background-color: #ffffff;
+    width: 100%; /* Optionnel : pour que les cartes prennent toute la largeur du conteneur */
+    max-width: 400px; /* Optionnel : pour éviter que les cartes soient trop larges */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
