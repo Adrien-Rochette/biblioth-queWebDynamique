@@ -108,6 +108,30 @@ body {
     gap: 15px; /* Espace entre l'icône et le texte */
 }
 
+.auth-card {
+    background-color: #ffffff; /* Fond blanc */
+    flex: 1; /* Les cartes se partagent l'espace équitablement */
+    min-width: 200px; /* Évite qu'elles soient trop étroites */
+    min-height: 200px;
+    padding: 20px;
+    border-radius: 8px; /* Bords arrondis */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Ombre légère comme sur l'image */
+    display: flex;
+    align-items: center; /* Aligne l'icône et le texte verticalement */
+    gap: 15px; /* Espace entre l'icône et le texte */
+}
+
+
+.auth-icon {
+    width: 150px;
+    height: 150px;
+    object-fit: contain; /* Évite de déformer l'image */
+}
+
+
+.auth-card-details{
+    justify-content: space;
+}
 
 .card-icon {
     width: 35px;
