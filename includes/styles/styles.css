@@ -1,0 +1,133 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    height: 100vh;
+}
+
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+
+.sidebar {
+    width: 200px; /* Largeur fixe comme sur l'image */
+    background-color: #e0e0e0;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Logo + Titre 'Library' */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px; /* Espace sous le logo */
+}
+
+.logo-img {
+    width: 30px; /* Taille du petit logo */
+    height: auto;
+}
+
+.brand-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+/* Menu de navigation */
+.sidebar-nav ul {
+    list-style: none; /* Enlève les puces */
+}
+
+.sidebar-nav li {
+    margin-bottom: 10px; /* Espace entre les liens */
+}
+
+.sidebar-nav a {
+    text-decoration: none; /* Enlève le soulignement */
+    color: #555;
+    font-size: 0.9rem;
+    display: block;
+    padding: 5px 0;
+    transition: color 0.2s;
+}
+
+.sidebar-nav a:hover {
+    color: #000; /* Plus sombre au survol */
+}
+
+/* Style pour le lien actif (ici 'Accueil') */
+.sidebar-nav a.active {
+    font-weight: 700;
+    color: #000;
+}
+
+/* --- CONTENU PRINCIPAL --- */
+.main-content {
+    flex-grow: 1; /* Prend tout l'espace restant */
+    padding: 30px;
+}
+
+.content-header {
+    margin-bottom: 30px;
+}
+
+.page-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* --- GRILLE DES CARTES (FLEXBOX) --- */
+.stats-grid {
+    display: flex;
+    gap: 20px; /* Espace entre les cartes */
+    flex-wrap: wrap; /* Permet de passer à la ligne sur petit écran */
+}
+
+/* --- STYLISATION D'UNE CARTE (STAT-CARD) --- */
+.stat-card {
+    background-color: #ffffff; /* Fond blanc */
+    flex: 1; /* Les cartes se partagent l'espace équitablement */
+    min-width: 200px; /* Évite qu'elles soient trop étroites */
+    padding: 20px;
+    border-radius: 8px; /* Bords arrondis */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Ombre légère comme sur l'image */
+    display: flex;
+    align-items: center; /* Aligne l'icône et le texte verticalement */
+    gap: 15px; /* Espace entre l'icône et le texte */
+}
+
+
+.card-icon {
+    width: 35px;
+    height: 35px;
+    object-fit: contain; /* Évite de déformer l'image */
+}
+
+/* Détails du texte dans la carte */
+.card-details {
+    display: flex;
+    align-items: baseline; /* Aligne le chiffre et le texte sur la ligne de base */
+    gap: 5px;
+}
+
+.stat-number {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    color: #777; /* Texte 'livres', 'auteurs' plus clair */
+}
