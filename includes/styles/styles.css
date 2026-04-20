@@ -155,3 +155,31 @@ body {
     font-size: 0.85rem;
     color: #777; /* Texte 'livres', 'auteurs' plus clair */
 }
+
+.login-form-out{
+    background-color: black;
+    border : black solid 1px;
+}
+
+.page-title-form{
+    height: 100%;
+}
+
+.login-form{
+
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.login-form-in{
+
+    color : gray;
+    background-color: white;
+}
+
+.caseLogin{
+    border : black solid 1px;
+    padding: 10px;
+}
