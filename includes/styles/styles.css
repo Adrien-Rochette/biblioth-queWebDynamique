@@ -255,4 +255,5 @@ body {
 .btn-login:hover {
     background-color: #000;
     color: #fff;
+    border-radius: 8px;
 }
