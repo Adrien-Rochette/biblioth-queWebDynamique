@@ -1,47 +1,50 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library Dashboard</title>
-    <link rel="stylesheet" href="includes/styles/styles.css">
-</head>
-<body>
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Library Dashboard</title>
+        <link rel="stylesheet" href="includes/styles/styles.css">
+    </head>
+    <body>
 
-<main class="container">
-    <aside class="sidebar">
-        <div class="brand">
-            <img src="images/pileLivre.png" alt="Logo Library" class="logo-img">
-            <h1 class="brand-title">Library</h1>
-        </div>
-
-        <nav class="sidebar-nav">
-            <ul>
-                <li><a href="index.html" class="active">Accueil</a></li>
-                <li><a href="livres.html">Livres</a></li>
-                <li><a href="auteur.html">Auteurs</a></li>
-                <li><a href="user.html">Utilisateurs</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
-    </aside>
-
-    <section class="main-content">
-        <header class="content-header">
-            <h1 class="page-title">Connexion</h1>
-        </header>
-        <div class="login-form-out">
-            <div class="login-form">
-                <h2 class="page-title-form ">Connexion</h2>
-                <div class="login-form-in">
-                        <p class = caseLogin>Email</p>
-                        <p class = caseLogin>Mots de passe</p>
-                        <p >se connecter</p>
-                </div>
+    <main class="container">
+        <aside class="sidebar">
+            <div class="brand">
+                <img src="images/pileLivre.png" alt="Logo Library" class="logo-img">
+                <h1 class="brand-title">Library</h1>
             </div>
-            </div>
-    </section>
-</main>
 
-</body>
-</html>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="livres.html">Livres</a></li>
+                    <li><a href="auteur.html">Auteurs</a></li>
+                    <li><a href="user.html">Utilisateurs</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <section class="main-content">
+            <header class="content-header">
+                <h1 class="page-title">Connexion</h1>
+            </header>
+
+            <div class="login-container">
+                <div class="login-header">Connexion</div>
+                <form class="login-body">
+                    <div class="input-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" placeholder="Mot de passe" required>
+                    </div>
+                    <button type="submit" class="btn-login">Se connecter</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    </body>
+    </html>

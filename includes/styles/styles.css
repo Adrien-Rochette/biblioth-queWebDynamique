@@ -156,35 +156,12 @@ body {
     color: #777; /* Texte 'livres', 'auteurs' plus clair */
 }
 
-.login-form-out{
-    background-color: black;
-    border : black solid 1px;
-}
 
 .page-title-form{
     height: 100%;
 }
 
-.login-form{
 
-    text-align: center;
-    background-color: black;
-    color: white;
-    padding: 10px;
-}
-
-.login-form-in{
-    flex-direction: column;
-    flex : 1;
-    color : gray;
-    background-color: white;
-}
-
-
-.caseLogin{
-    border : black solid 1px;
-    padding: 10px;
-}
 
 .user-grid {
     display: grid;
@@ -214,4 +191,68 @@ body {
 .card-user{
     width: 100px;
     height: 100px;
+}
+
+/* --- NOUVEAU STYLE CONNEXION --- */
+
+.login-container {
+    max-width: 450px; /* Largeur du formulaire */
+    margin: 40px auto; /* Centre le formulaire horizontalement */
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 8px;
+    overflow: hidden; /* Pour que les coins du contenu suivent l'arrondi */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.login-header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.login-body {
+    background-color: #fff;
+    padding: 2px; /* Créer le léger filet noir entre les cases */
+    display: flex;
+    flex-direction: column;
+    gap: 2px; /* Espace entre les lignes */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 18px;
+    border: none;
+    border-bottom: 1px solid #eee; /* Ligne légère entre email et password */
+    outline: none;
+    font-size: 1rem;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.input-group input:focus {
+    background-color: #fafafa;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #fff;
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: lowercase;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #000;
+    color: #fff;
 }
