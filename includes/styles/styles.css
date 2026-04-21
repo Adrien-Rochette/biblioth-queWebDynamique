@@ -187,16 +187,17 @@ body {
 }
 
 .user-grid {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    justify-content: center;
-    align-items: center;
+    padding: 20px 0;
 }
 
 .user-card {
     background-color: #ffffff;
     width: 100%; /* Optionnel : pour que les cartes prennent toute la largeur du conteneur */
+    min-width: 200px;
+    min-height: 200px;
     max-width: 400px; /* Optionnel : pour éviter que les cartes soient trop larges */
     padding: 20px;
     border-radius: 8px;
@@ -204,4 +205,13 @@ body {
     display: flex;
     align-items: center;
     gap: 15px;
+}
+
+.user-details{
+    flex-direction: row;
+}
+
+.card-user{
+    width: 100px;
+    height: 100px;
 }
