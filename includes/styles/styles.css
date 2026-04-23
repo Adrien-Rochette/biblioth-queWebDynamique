@@ -130,8 +130,10 @@ body {
 }
 
 
-.auth-card-details{
-    justify-content: space;
+.auth-card-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .card-icon {
@@ -257,4 +259,11 @@ body {
     background-color: #000;
     color: #fff;
     border-radius: 8px;
+}
+
+.stat-desc {
+    font-size: 0.6rem;
+    line-height: 0.8rem; /* valeur plus lisible */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
