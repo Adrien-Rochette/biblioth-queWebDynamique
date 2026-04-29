@@ -301,6 +301,17 @@ img.menu {
     outline: none;
 }
 
+@media (max-width: 1140px) and (min-width: 700px) {
+    .stats-grid {
+        justify-content: flex-start;
+    }
+
+    .stat-card {
+        flex: 0 0 calc(33.333% - 20px); /* 3 cartes par ligne, en tenant compte du gap */
+        min-width: auto; /* Désactive la largeur minimale flexible */
+        max-width: calc(33.333% - 20px); /* Limite la largeur max */
+    }
+}
 
 @media screen and (max-width: 700px) {
     .burgerButton {
