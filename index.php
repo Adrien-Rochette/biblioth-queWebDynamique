@@ -9,7 +9,10 @@
 </head>
 
 <body>
-
+<?php
+    $nbLivres = 240;
+    $tabValeurs = [$nbLivres, $nbLivres-40];
+?>
 <div id="splash-screen">
     <div class="splash-content">
         <img src="images/Che_GueSem.png" alt="Logo" id="splash-logo">
@@ -37,7 +40,7 @@
         <nav class="sidebar-nav">
             <ul>
                 <li><a href="index.html" class="active">Accueil</a></li>
-                <li><a href="livres.html">Livres</a></li>
+                <li><a href="livres.php">Livres</a></li>
                 <li><a href="auteur.html">Auteurs</a></li>
                 <li><a href="user.html">Utilisateurs</a></li>
                 <li><a href="login.html">Login</a></li>
@@ -54,7 +57,7 @@
             <div class="stat-card">
                 <img src="images/livres.png" alt="Icône Livres" class="card-icon">
                 <div class="card-details">
-                    <span class="stat-number">X</span>
+                    <span class="stat-number"><?= $nbLivres ?></span>
                     <span class="stat-label">livres</span>
                 </div>
             </div>
@@ -62,7 +65,7 @@
             <div class="stat-card">
                 <img src="images/stylo.png" alt="Icône Auteurs" class="card-icon">
                 <div class="card-details">
-                    <span class="stat-number">Y</span>
+                    <span class="stat-number"><?= $tabValeurs[1]; ?></span>
                     <span class="stat-label">auteurs</span>
                 </div>
             </div>

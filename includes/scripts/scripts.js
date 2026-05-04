@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /*
         Si la page n'a pas d'écran d'intro,
         on affiche directement le contenu.
-        Cela évite le white screen sur livres.html, auteur.html, user.html, etc.
+        Cela évite le white screen sur livres.php, auteur.html, user.html, etc.
     */
     if (!splash) {
         container.classList.remove('intro-hidden');
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /*
         Mets cette constante à true si tu veux afficher l'intro
         une seule fois par session.
-        Mets-la à false si tu veux afficher l'intro à chaque chargement de index.html.
+        Mets-la à false si tu veux afficher l'intro à chaque chargement de index.php.
     */
     const introUneSeuleFois = false;
 
