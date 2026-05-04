@@ -1,9 +1,5 @@
 <?php
-function debug($tabLivres){
-print('<pre>');
-print_r($tabLivres);
-print('</pre>');
-}
+include_once 'fonctions.php';
 ?>
 
 <!DOCTYPE html>
@@ -34,11 +30,6 @@ print('</pre>');
             ],
     ];
     debug($tabLivres);
-?>
-<?php
-    print('<pre>');
-    print_r($livresTitle);
-    print('</pre>');
 ?>
 
 <main class="container">
